@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/*---------------------- Admin Route --------------------*/
+Route::group(['prefix' => 'admin'], function() {
+
 });
+/*-------------------------------------------------------*/
