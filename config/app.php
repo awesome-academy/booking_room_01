@@ -69,7 +69,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Locale Configuration
+    | Application Localization Configuration
     |--------------------------------------------------------------------------
     |
     | The application locale determines the default locale that will be used
@@ -78,11 +78,11 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'vi',
 
     /*
     |--------------------------------------------------------------------------
-    | Application Fallback Locale
+    | Application Fallback Localization
     |--------------------------------------------------------------------------
     |
     | The fallback locale determines the locale to use when the current one
@@ -161,6 +161,10 @@ return [
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
+        /*
+         * Debugbar Laravel
+         */
+        'Barryvdh\Debugbar\ServiceProvider',
     ],
 
     /*
@@ -212,6 +216,10 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
 
+        /*
+         * Debug bar
+         */
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
     ],
 
 ];
