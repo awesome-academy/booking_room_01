@@ -14,3 +14,4 @@ yarn-error.log
 .phpunit.result.cache
 /public/img
 /public/bower_components
+/storage/debugbar

@@ -11,8 +11,16 @@
 |
 */
 
+
 /*---------------------- Admin Route --------------------*/
 Route::group(['prefix' => 'admin'], function() {
-
+    Route::get('/', 'Admin\HomeController@index');
 });
+/*-------------------------------------------------------*/
+
+/*---------------------- Language -----------------------*/
+Route::get('/{locale}', function($locale) {
+    Session::put('locale', $locale);
+    return redirect()->back();
+})->name('locale');
 /*-------------------------------------------------------*/
